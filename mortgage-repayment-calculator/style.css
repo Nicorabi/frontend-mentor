@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: hsl(202, 55%, 16%);
+  padding: 0.5em;
+}
+
+a {
+  color: hsl(202, 55%, 16%);
+  padding: 1em;
+}
+
+#mortgage-amount-container,
+#mortgage-term-container,
+#interest-rate-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+#mortgage-term-container,
+#interest-rate-container {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+
+#repayment-container,
+#interest-only-container {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  height: 50px;
+  margin-top: 0.5em;
+  font-weight: bold;
+  align-items: center;
+}
+
+#result-container {
+  background-color: hsl(202, 55%, 16%);
+  color: white;
+  padding: 1.5em;
+}
+
+#result-container p {
+  color: silver;
+}
+
+#results-container-amount {
+  border: solid 1px gray;
+  padding: 1em;
+  color: silver;
+  margin: 0.5em;
+  border-top: hsl(61, 70%, 52%) solid 2px;
+  border-radius: 10px;
+}
+
+#results-container-amount span {
+  color: hsl(61, 70%, 52%);
+}
+
+#monthly-repayment,
+#total-repayment {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: solid 1px gray;
+  border-radius: 5px;
+  outline: none;
+  height: 50px;
+  position: relative;
+}
+
+#repayment,
+#interest-only {
+  margin: 0.5em;
+}
+
+button {
+  width: 95%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: hsl(61, 70%, 52%);
+  border: solid 1px hsl(61, 70%, 52%);
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button:active {
+  background-color: hsl(61, 63%, 39%);
+}
+
+div {
+  padding: 0.5em;
+}
+
+h2 {
+  padding: 0.3em;
+}
+
+p {
+  padding: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-container {
+  background-color: hsl(202, 55%, 16%);
+  color: white;
+  padding: 2em;
+}
+
+.card-container p {
+  color: silver;
+  text-align: center;
+}
+
+.card-container h2 {
+  text-align: center;
+}
+
+.card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input:hover {
+  cursor: pointer;
+  border: hsl(61, 70%, 52%) 2px solid;
+}
+
+#repayment-container:hover,
+#interest-only-container:hover {
+  border: hsl(61, 70%, 52%) 2px solid;
+}
+
+input[type="radio"] {
+  accent-color: hsl(61, 70%, 52%);
+}
+
+.error {
+  color: red;
+  display: flex;
+}
+
+.attribution {
+  color: hsl(202, 55%, 16%);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.link {
+  color: hsl(169, 82%, 27%);
+  margin-left: -1em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: hsl(202, 86%, 94%);
+  }
+
+  #container {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    margin-top: 8em;
+    background-color: white;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  #mortgage-container {
+    width: 1000px;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-bottom: 1.8em;
+  }
+
+  #result-container {
+    padding-top: 8em;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+    margin-right: -0.5em;
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+  }
+
+  #monthly-repayment,
+  #total-repayment {
+    margin-top: 1em;
+  }
+
+  .card-container {
+    padding-top: 9em;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+    width: 925px;
+    margin-right: -0.5em;
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+  }
+
+  #Mortgage-interest-container {
+    display: flex;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <form class="form-container" id="form">
+      <h1>Contact Us</h1>
+      <div class="name-container">
+        <div>
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="firstName" />
+          <span id="first-name-error" class="error"></span>
+        </div>
+        <div>
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="lastName" />
+          <span id="last-name-error" class="error"></span>
+        </div>
+      </div>
+      <div>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" />
+        <span id="email-error" class="error"></span>
+      </div>
+      <div>
+        <label>Query Type *</label>
+      </div>
+      <div>
+        <div class="query-container">
+          <div class="enquiry1">
+            <input
+              type="radio"
+              id="enquiry"
+              name="queryType"
+              value="General Enquiry"
+            />
+            General Enquiry
+          </div>
+          <div class="support1">
+            <input
+              type="radio"
+              id="support"
+              name="queryType"
+              value="Support Request"
+            />
+            Support Request
+          </div>
+        </div>
+        <span id="query-error" class="error"></span>
+      </div>
+      <div>
+        <label for="message" class="message">Message *</label>
+        <br />
+        <textarea id="message" name="message" rows="6" cols="80"></textarea>
+        <span id="message-error" class="error"></span>
+      </div>
+      <div>
+        <input type="checkbox" id="consent" name="consent" />
+        I consent to being contacted by the team *
+        <span id="consent-error" class="error"></span>
+      </div>
+      <br />
+      <button type="submit" name="button" id="button">Submit</button>
+    </form>
+    <div id="alert-card" class="hidden">
+      <h2 class="hidden-header">Message Sent!</h2>
+      <p class="hidden-paragraph">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj"
+        target="_blank"
+        class="link"
+      >
+        Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Nicorabi" target="_blank" class="link"
+        >Nicorabi</a
+      >.
+    </div>
+  </body>
+</html>

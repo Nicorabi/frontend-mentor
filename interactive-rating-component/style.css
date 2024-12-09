@@ -1,0 +1,144 @@
+body {
+  background: hsl(216, 12%, 8%);
+  max-width: 375px; 
+  font-family: 'Overpass';
+  user-select: none;
+}
+
+#main-container {
+  width: 280px;
+  text-align: start;
+  padding: 20px 30px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  margin: 120px auto;
+  min-height: 315px;
+}
+
+#second-container {
+  width: 280px;
+  text-align: center;
+  padding: 20px 30px;
+  background: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  margin: 120px auto;
+  min-height: 315px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.attribution {
+  color: hsl(217, 12%, 63%);
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+}
+
+.link {
+  color: hsl(25, 97%, 53%);
+}
+
+#selection {
+  margin-top: 20px;
+  color: hsl(25, 97%, 53%);
+  background: hsl(213, 19%, 25%);
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  margin-left: 35px;
+}
+
+#btn {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  width: 285px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: 'Overpass';
+  font-size: 16px;
+}
+
+#btn:active {
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+
+#numbers-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.numbers {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: hsl(213, 19%, 25%);
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  font-family: 'Overpass';
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+}
+
+.numbers:hover {
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.numbers:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+#image {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  background: hsl(213, 19%, 25%);
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  font-family: 'Overpass';
+  margin-top: 10px;
+}
+
+#image-2 {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1920px) {
+  body {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #main-container {
+    margin-top: 200px;
+    margin-bottom: 300px;
+  }
+
+  #second-container {
+    margin-top: 200px;
+    margin-bottom: 300px;
+  }
+}

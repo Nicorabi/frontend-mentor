@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <script src="script.js" defer></script>
+    <title>Mortgage Repayment Calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="mortgage-container">
+        <h1>Mortgage Calculator</h1>
+        <a href="#" id="clear-all">Clear All</a>
+        <br />
+        <br />
+        <div>
+          <div id="mortgage-amount-container">
+            Mortgage Amount
+            <input type="number" id="mortgage-amount" />
+            <span id="mortgage-amount-error" class="error"></span>
+          </div>
+          <br />
+          <div id="Mortgage-interest-container">
+            <div id="mortgage-term-container">
+              Mortgage Term
+              <input type="number" id="mortgage-term" />
+              <span id="mortgage-term-error" class="error"></span>
+            </div>
+            <br />
+            <div id="interest-rate-container">
+              Interest Rate
+              <input type="number" id="interest-rate" />
+              <span id="interest-rate-error" class="error"></span>
+            </div>
+          </div>
+          <br />
+          <div>
+            Mortgage Type
+            <div id="repayment-container">
+              <input
+                type="radio"
+                id="repayment"
+                name="queryType"
+                value="General Enquiry"
+              />Repayment
+            </div>
+            <br />
+            <div id="interest-only-container">
+              <input
+                type="radio"
+                id="interest-only"
+                name="queryType"
+                value="General Enquiry"
+              />Interest Only
+            </div>
+            <span id="repayment-container-error" class="error"></span>
+          </div>
+          <br />
+          <button type="submit" id="button">Calculate Repayments</button>
+        </div>
+      </div>
+      <br />
+      <div id="card-container" class="card-container">
+        <img
+          src="images/illustration-empty.svg"
+          alt="card image"
+          class="card-image"
+        />
+        <h2>Results shown here</h2>
+        <p>
+          Complete the form and click "calculate repayments" to see what your
+          monthly repayments would be.
+        </p>
+      </div>
+      <div id="result-container" class="hidden">
+        <h2>Your results</h2>
+        <br />
+        <p>
+          Your results are shown based on the information you provided. To
+          adjust the results, edit the form and click "calculate repayments"
+          again.
+        </p>
+        <br />
+        <div id="results-container-amount">
+          <div>
+            Your monthly repayments
+            <span id="monthly-repayment"></span>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div>
+            Total you'll repay over the term
+            <span id="total-repayment"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73"
+        target="_blank"
+        class="link">Frontend Mentor</a>Coded by
+      <a href="https://github.com/Nicorabi" target="_blank" class="link">Nicorabi</a>
+  </body>
+</html>
