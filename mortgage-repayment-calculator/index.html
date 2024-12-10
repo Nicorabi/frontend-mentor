@@ -11,27 +11,29 @@
   <body>
     <div id="container">
       <div id="mortgage-container">
-        <h1>Mortgage Calculator</h1>
-        <a href="#" id="clear-all">Clear All</a>
+        <div class="mortgage-header">
+          <h1>Mortgage Calculator</h1>
+          <a href="#" id="clear-all">Clear All</a>
+        </div>
         <br />
         <br />
         <div>
           <div id="mortgage-amount-container">
             Mortgage Amount
-            <input type="number" id="mortgage-amount" />
+            <input type="number" id="mortgage-amount" placeholder="$" />
             <span id="mortgage-amount-error" class="error"></span>
           </div>
           <br />
           <div id="Mortgage-interest-container">
             <div id="mortgage-term-container">
               Mortgage Term
-              <input type="number" id="mortgage-term" />
+              <input type="number" id="mortgage-term" placeholder="years" />
               <span id="mortgage-term-error" class="error"></span>
             </div>
             <br />
             <div id="interest-rate-container">
               Interest Rate
-              <input type="number" id="interest-rate" />
+              <input type="number" id="interest-rate" placeholder="%" />
               <span id="interest-rate-error" class="error"></span>
             </div>
           </div>
@@ -58,7 +60,13 @@
             <span id="repayment-container-error" class="error"></span>
           </div>
           <br />
-          <button type="submit" id="button">Calculate Repayments</button>
+          <button type="submit" id="button">
+            <img
+              src="images/icon-calculator.svg"
+              alt="Calculator icon"
+              class="calculator-icon"
+            />Calculate Repayments
+          </button>
         </div>
       </div>
       <br />
@@ -103,7 +111,12 @@
       <a
         href="https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73"
         target="_blank"
-        class="link">Frontend Mentor</a>Coded by
-      <a href="https://github.com/Nicorabi" target="_blank" class="link">Nicorabi</a>
+        class="link"
+        >Frontend Mentor</a
+      >Coded by
+      <a href="https://github.com/Nicorabi" target="_blank" class="link"
+        >Nicorabi</a
+      >
+    </div>
   </body>
 </html>

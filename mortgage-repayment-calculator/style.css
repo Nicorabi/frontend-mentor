@@ -90,14 +90,22 @@ input {
 button {
   width: 95%;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: hsl(61, 70%, 52%);
   border: solid 1px hsl(61, 70%, 52%);
   cursor: pointer;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.calculator-icon {
+  margin-top: -0.2em;
+  margin-left: -1em;
 }
 
 button:active {
@@ -193,6 +201,8 @@ input[type="radio"] {
     background-color: white;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   #mortgage-container {
@@ -232,5 +242,22 @@ input[type="radio"] {
   #Mortgage-interest-container {
     display: flex;
     gap: 24px;
+  }
+
+  .mortgage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -0.5em;
+  }
+
+  #mortgage-amount-container {
+    margin-top: -2em;
+  }
+
+  button {
+    width: 70%;
+    margin-right: 7em;
+    margin-top: 1em;
   }
 }

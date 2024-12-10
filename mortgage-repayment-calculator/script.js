@@ -52,11 +52,11 @@ button.addEventListener("click", function (e) {
         const numberOfPayments = mortgageTerm.value * 12;
         const monthlyRepayments = mortgageAmount.value * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments)) / (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
 
-        monthlyRepayment.textContent = monthlyRepayments.toFixed(2);
+        monthlyRepayment.textContent = `$${monthlyRepayments.toFixed(2)}`;
 
         const totalRepayments = monthlyRepayments * mortgageTerm.value * 12;
 
-        totalRepayment.textContent = totalRepayments.toFixed(2);
+        totalRepayment.textContent = `$${totalRepayments.toFixed(2)}`;
 
         cardContainer.style.display = "none";
         resultContainer.classList.remove("hidden");
@@ -64,14 +64,13 @@ button.addEventListener("click", function (e) {
     } else if (queryType === interestOnly) {
         const monthlyInterestRate = interestRate.value / 12 / 100;
         const numberOfPayments = mortgageTerm.value * 12;
-
         const monthlyRepayments = mortgageAmount.value * monthlyInterestRate;
 
-        monthlyRepayment.textContent = monthlyRepayments.toFixed(2);
+        monthlyRepayment.textContent = `$${monthlyRepayments.toFixed(2)}`;
 
         const totalRepayments = monthlyRepayments * numberOfPayments;
 
-        totalRepayment.textContent = totalRepayments.toFixed(2);
+        totalRepayment.textContent = `$${totalRepayments.toFixed(2)}`;
 
         cardContainer.style.display = "none";
         resultContainer.classList.remove("hidden");
