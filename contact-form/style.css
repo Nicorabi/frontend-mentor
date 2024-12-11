@@ -100,11 +100,18 @@ h1 {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  gap: 5px;
 }
 
 .enquiry1:hover,
 .support1:hover {
   background-color: hsl(148, 38%, 91%);
+}
+
+#enquiry,
+#support {
+  margin-top: -0.1em;
 }
 
 .query-container {
@@ -219,7 +226,7 @@ input:checked {
 
   #first-name,
   #last-name {
-    width: 270px;
+    width: 300px;
   }
 
   #alert-card {
