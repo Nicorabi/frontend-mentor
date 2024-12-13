@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newsletter Sign Up Form</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <img
+        src="images/illustration-sign-up-mobile.svg"
+        alt="illustration-sign-up-mobile"
+        id="main-image"
+      />
+      <div id="container">
+        <h1 id="header">Stay Updated!</h1>
+        <p id="first-paragraph">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <p id="second-paragraph">
+          <img src="images/icon-list.svg" alt="icon-list" class="icon" />
+          Product discovery and building what matters
+        </p>
+        <p id="third-paragraph">
+          <img src="images/icon-list.svg" alt="icon-list" class="icon" />
+          Measuring to ensure updates are a success
+        </p>
+        <p id="fourth-paragraph">
+          <img src="images/icon-list.svg" alt="icon-list" class="icon" /> And
+          much more!
+        </p>
+        <div id="email-container">
+          <label for="email" id="email-label">Email address</label>
+          <span id="email-error" class="error"></span>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@company.com"
+          />
+        </div>
+        <button type="button" id="button">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div id="message-container" class="hidden">
+        <img
+          src="images/icon-success.svg"
+          alt="icon-success"
+          id="message-container-icon"
+        />
+        <h1 id="message-container-header">Thanks for subscribing!</h1>
+        <p id="message-container-paragraph"></p>
+        <button id="message-container-button">Dismiss message</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Nicorabi" target="_blank">Nicorabi</a>.
+    </div>
+  </body>
+</html>
